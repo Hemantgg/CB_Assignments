@@ -1,0 +1,155 @@
+html{
+    scroll-behavior: smooth;
+    font-family: cursive;
+}
+* {padding: 0; margin: 0; }
+body{
+    background: rgb(253, 243, 208);
+}
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+      background: rgb(253, 243, 208);
+}
+
+.logo {
+  margin: 0 0 0 .45em;
+  
+}
+    .logo a {
+      color: rgb(28, 24, 22);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+      
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+      
+    }
+
+.navigation  {
+  display: flex;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: grey;
+}
+
+.navigation a:hover {
+    background: black;
+    color: white;
+}
+
+
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+
+
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; 
+}
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+     
+  } 
+}
+.bgImage{
+    width: 100%;
+    height: 100vh;
+}
+
+.flipCardContainer{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  #avtarImg{
+    width: 100%;
+    height: 300px;
+}
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+#fcb1{
+    background-color: #ec790e;
+    color: black;
+    transform: rotateY(180deg);
+}
+#fcb2{
+    background-color: #3b9e3b;
+    color: black;
+    transform: rotateY(180deg);
+}
+#fcb3{
+    background: blue;
+    color: black;
+    transform: rotateY(180deg);
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background: rgb(253, 243, 208);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+  }
