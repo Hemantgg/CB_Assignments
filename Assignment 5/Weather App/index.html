@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Assignment 5 Weather App</title>
+      <link rel="stylesheet" href="assets/style.css" />
+   </head>
+   <body>
+      <!-- Main app -->
+      <div class="app-wrap">
+          <!-- Search box -->
+         <header>
+            <input type="text"  class="search-box" placeholder="Search for a city......" />
+         </header>
+         <!-- inner dynamic text with respect to api ==> location, date/time, temperature-->
+         <main>
+            <section class="location">
+               <div class="place">--</div>
+               <div class="date">--</div>
+            </section>
+            <div class="current">
+               <div class="temp">-<span>°C</span></div>
+               <div class="weather">-</div>
+               <div class="high-low">- / -</div>
+            </div>
+         </main>
+      </div>
+      <script src="assets/script.js"></script>
+   </body>
+</html>
